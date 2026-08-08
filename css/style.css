@@ -97,7 +97,10 @@ td.num{font-variant-numeric:tabular-nums}
 .cal-nav button{background:#fff;border:1px solid var(--line);border-radius:9px;padding:8px 15px;cursor:pointer;font-family:inherit;font-weight:700;color:var(--green-d);font-size:.95rem}
 .cal-nav button:hover{background:#f0f7f4;border-color:var(--green)}
 /* Prayer */
-.prayer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:13px;margin-top:20px}
+.prayer-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:20px}
+@media(max-width:900px){.prayer-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.prayer-grid{grid-template-columns:repeat(2,1fr);gap:9px}
+ .prayer-card{padding:12px 8px}.prayer-card .ptime{font-size:1.1rem}.prayer-card .pname{font-size:.94rem}}
 .prayer-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
 .prayer-card.next{background:linear-gradient(135deg,var(--green),var(--green-l));border-color:var(--green);color:#fff}
 .prayer-card .pname{font-weight:800;font-size:1.02rem;margin-bottom:5px;color:var(--green-d)}
