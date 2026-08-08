@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ihijri.online/</loc><lastmod>2026-08-08</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ihijri.online/date</loc><lastmod>2026-08-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ihijri.online/calendar</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ihijri.online/calendar/year</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ihijri.online/months</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ihijri.online/age</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ihijri.online/salah</loc><lastmod>2026-08-08</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ihijri.online/salah/monthly</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ihijri.online/quran</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ihijri.online/zodiac</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ihijri.online/zodiac/stars</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ihijri.online/articles</loc><lastmod>2026-08-08</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ihijri.online/articles/hijri-vs-gregorian</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ihijri.online/articles/umm-al-qura-calendar</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ihijri.online/articles/convert-hijri-to-gregorian</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ihijri.online/articles/ramadan-eid-dates</loc><lastmod>2026-08-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ihijri.online/about</loc><lastmod>2026-08-08</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ihijri.online/contact</loc><lastmod>2026-08-08</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ihijri.online/privacy-policy</loc><lastmod>2026-08-08</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://ihijri.online/terms</loc><lastmod>2026-08-08</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
