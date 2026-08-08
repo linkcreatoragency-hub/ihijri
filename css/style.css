@@ -174,3 +174,16 @@ footer p{font-size:.93rem;color:#a9c6bb}
   .cal-nav button{padding:7px 10px;font-size:.85rem}
   .table-wrap:has(.cal){overflow-x:visible}
 }
+/* countdown */
+.cd-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:15px;margin-top:6px}
+.cd-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 16px;text-align:center}
+.cd-card.cd-next{background:linear-gradient(135deg,var(--green-d),var(--green-l));border-color:var(--green);color:#fff;box-shadow:0 8px 26px rgba(11,107,79,.22)}
+.cd-ic{font-size:2rem;line-height:1;margin-bottom:8px}
+.cd-name{font-weight:800;font-size:1.05rem;color:var(--green-d);margin-bottom:6px}
+.cd-card.cd-next .cd-name{color:#fff}
+.cd-days{font-size:1.35rem;font-weight:800;color:var(--gold);margin-bottom:8px}
+.cd-card.cd-next .cd-days{color:var(--gold-l)}
+.cd-date{font-size:.87rem;color:var(--gray);line-height:1.7}
+.cd-card.cd-next .cd-date{color:#dbeee5}
+.cd-note{font-size:.8rem;color:var(--gray);margin-top:7px;opacity:.9}
+.cd-card.cd-next .cd-note{color:#cfe6dc}
