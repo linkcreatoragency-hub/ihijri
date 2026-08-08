@@ -16,15 +16,18 @@
 <meta property="og:image" content="https://ihijri.online/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="التقويم الهجري ومحول التاريخ الهجري والميلادي">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b6b4f">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"></noscript>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://ihijri.online/#org", "name": "iHijri - التقويم الهجري", "url": "https://ihijri.online/", "logo": "https://ihijri.online/img/favicon.svg"}, {"@type": "WebSite", "@id": "https://ihijri.online/#website", "name": "التقويم الهجري iHijri", "url": "https://ihijri.online/", "inLanguage": "ar", "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "BlogPosting", "headline": "كيف تحوّل التاريخ الهجري إلى ميلادي؟ دليل عملي", "description": "دليل عملي لتحويل التاريخ الهجري إلى ميلادي والعكس: الطريقة الفورية بالمحول، والمعادلة التقريبية، وجداول أم القرى، مع أمثلة محلولة.", "url": "https://ihijri.online/articles/convert-hijri-to-gregorian", "datePublished": "2026-08-08", "dateModified": "2026-08-08", "inLanguage": "ar", "image": "https://ihijri.online/img/og-image.png", "author": {"@type": "Organization", "name": "iHijri"}, "publisher": {"@id": "https://ihijri.online/#org"}, "mainEntityOfPage": "https://ihijri.online/articles/convert-hijri-to-gregorian"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ihijri.online/"}, {"@type": "ListItem", "position": 2, "name": "مقالات", "item": "https://ihijri.online/articles"}, {"@type": "ListItem", "position": 3, "name": "كيف تحوّل التاريخ الهجري إلى ميلادي؟ دليل عملي"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "هل يمكن تحويل التاريخ الهجري إلى ميلادي يدوياً؟", "acceptedAnswer": {"@type": "Answer", "text": "يمكن ذلك باستخدام جداول أم القرى، لكن الحساب اليدوي معرّض للخطأ لأن أطوال الأشهر متغيرة. استخدام المحول الإلكتروني أدق وأسرع بكثير."}}, {"@type": "Question", "name": "ما دقة المعادلة التقريبية للتحويل؟", "acceptedAnswer": {"@type": "Answer", "text": "تعطي السنة فقط بشكل تقريبي وقد تخطئ بسنة كاملة، ولا تحدد اليوم والشهر إطلاقاً. لا تصلح لأي استخدام رسمي أو قانوني."}}, {"@type": "Question", "name": "لماذا يظهر تاريخ ميلادي بفارق يوم عن الوثيقة الرسمية؟", "acceptedAnswer": {"@type": "Answer", "text": "غالباً بسبب أن اليوم الهجري يبدأ من غروب الشمس، أو لاختلاف الجهة المصدِرة للوثيقة في اعتماد الرؤية البصرية بدلاً من الحساب الفلكي."}}, {"@type": "Question", "name": "هل التحويل في موقعكم مجاني وبلا حدود؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، التحويل مجاني بالكامل وبلا حد أقصى لعدد المرات، ولا يتطلب تسجيل دخول، وتتم العملية داخل متصفحك دون إرسال بياناتك."}}]}]}</script>
 </head>
 <body>
@@ -32,7 +35,7 @@
   <div class="container nav">
     <a href="/" class="logo"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#0b6b4f"/><path d="M31.5 30.2a9.6 9.6 0 1 1-3.1-15.6 11.8 11.8 0 1 0 3.1 15.6z" fill="#e0c07a"/><path d="m33.6 17.4 1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#fff"/></svg><span>التقويم الهجري</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
+    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/countdown">كم باقي</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
   </div>
 </header>
 <div class="article"><nav class="breadcrumbs" aria-label="مسار التنقل"><a href="/">الرئيسية</a> &rsaquo; <a href="/articles">مقالات</a> &rsaquo; كيف تحوّل التاريخ الهجري إلى ميلادي؟ دليل عملي</nav><h1>كيف تحوّل التاريخ الهجري إلى ميلادي؟ دليل عملي</h1><p class="meta">نُشر في 8 أغسطس 2026 · فريق التقويم الهجري</p>
@@ -69,6 +72,22 @@
 </tbody></table>
 </div>
 <p>وإذا كان ما تريده هو معرفة عمرك بالتقويمين معاً بدلاً من تحويل تاريخ واحد، فاستخدم <a href="/age">حاسبة العمر</a> التي تعطيك النتيجة بالسنوات والأشهر والأيام هجرياً وميلادياً.</p>
+
+<h2>حالات عملية شائعة</h2>
+<p><strong>تعبئة نموذج يطلب التاريخ الميلادي وهويتك بالهجري:</strong> افتح المحول، اختر «هجري ← ميلادي»، وأدخل التاريخ كما هو مكتوب في الهوية بالضبط. لا تحاول التقدير، فالفارق قد يبلغ أسابيع.</p>
+<p><strong>توثيق عقد يبدأ اليوم وينتهي بعد سنة هجرية:</strong> احسب تاريخ اليوم الهجري، أضف سنة واحدة إلى رقم السنة مع بقاء اليوم والشهر، ثم حوّل النتيجة إلى ميلادي لتعرف تاريخ الانتهاء الفعلي — وستجده أقصر بنحو أحد عشر يوماً من سنة ميلادية كاملة.</p>
+<p><strong>معرفة عمر مستند قديم:</strong> إذا وجدت وثيقة عائلية مؤرخة بالهجري في القرن الماضي، يمكنك تحويلها بدقة لأن نطاق تقويم أم القرى يمتد إلى عام 1300هـ (1882م تقريباً).</p>
+<p><strong>حساب موعد مناسبة قادمة:</strong> لمعرفة متى يوافق رمضان أو العيد ميلادياً في السنوات القادمة، استخدم <a href="/countdown">عدّاد المناسبات</a> الذي يعرض المدة المتبقية والتاريخ الميلادي مباشرة.</p>
+
+<h2>كيف تتحقق من صحة نتيجة التحويل؟</h2>
+<p>إن أردت التأكد من نتيجة أي محوّل، جرّب هذه الفحوص السريعة:</p>
+<ul class="rich">
+  <li><strong>فحص اليوم في الأسبوع:</strong> حوّل تاريخاً تعرف يومه (كتاريخ ميلادك) وتحقق من تطابق اسم اليوم. اختلاف اليوم يعني خطأً في الحساب لا في القراءة.</li>
+  <li><strong>فحص التحويل العكسي:</strong> حوّل التاريخ من الهجري إلى الميلادي ثم أعد تحويله من الميلادي إلى الهجري. يجب أن تعود إلى التاريخ نفسه تماماً.</li>
+  <li><strong>فحص طول الشهر:</strong> جرّب إدخال يوم 30 في شهر مدته 29 يوماً. المحوّل الجيد يرفض التاريخ ويخبرك بعدد أيام الشهر الفعلي بدل إعطاء نتيجة خاطئة.</li>
+  <li><strong>فحص نقطة مرجعية معروفة:</strong> قارن نتيجة تاريخ مشهور تعرفه مسبقاً، كبداية عام هجري سابق، مع ما هو معتمد رسمياً.</li>
+</ul>
+<p>المحوّل في هذا الموقع يجتاز هذه الفحوص جميعاً لأنه يعتمد جداول أطوال الأشهر الرسمية بدل المعادلات التقريبية.</p>
 <h2>أسئلة شائعة</h2><details class="faq"><summary>هل يمكن تحويل التاريخ الهجري إلى ميلادي يدوياً؟</summary><div class="a">يمكن ذلك باستخدام جداول أم القرى، لكن الحساب اليدوي معرّض للخطأ لأن أطوال الأشهر متغيرة. استخدام المحول الإلكتروني أدق وأسرع بكثير.</div></details><details class="faq"><summary>ما دقة المعادلة التقريبية للتحويل؟</summary><div class="a">تعطي السنة فقط بشكل تقريبي وقد تخطئ بسنة كاملة، ولا تحدد اليوم والشهر إطلاقاً. لا تصلح لأي استخدام رسمي أو قانوني.</div></details><details class="faq"><summary>لماذا يظهر تاريخ ميلادي بفارق يوم عن الوثيقة الرسمية؟</summary><div class="a">غالباً بسبب أن اليوم الهجري يبدأ من غروب الشمس، أو لاختلاف الجهة المصدِرة للوثيقة في اعتماد الرؤية البصرية بدلاً من الحساب الفلكي.</div></details><details class="faq"><summary>هل التحويل في موقعكم مجاني وبلا حدود؟</summary><div class="a">نعم، التحويل مجاني بالكامل وبلا حد أقصى لعدد المرات، ولا يتطلب تسجيل دخول، وتتم العملية داخل متصفحك دون إرسال بياناتك.</div></details><div class="cta-box"><h3>جرّب محول التاريخ الهجري المجاني</h3><p>حوّل بين التاريخ الهجري والميلادي فوراً وفق تقويم أم القرى المعتمد في السعودية.</p><a class="btn" href="/">افتح محول التاريخ ←</a></div></div><footer>
   <div class="container">
     <div class="footer-grid">
@@ -84,6 +103,7 @@
           <li><a href="/calendar">التقويم الشهري</a></li>
           <li><a href="/calendar/year">التقويم السنوي</a></li>
           <li><a href="/age">حاسبة العمر</a></li>
+          <li><a href="/countdown">كم باقي على رمضان</a></li>
         </ul>
       </div>
       <div>

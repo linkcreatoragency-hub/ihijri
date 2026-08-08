@@ -16,15 +16,18 @@
 <meta property="og:image" content="https://ihijri.online/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="التقويم الهجري ومحول التاريخ الهجري والميلادي">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b6b4f">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"></noscript>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://ihijri.online/#org", "name": "iHijri - التقويم الهجري", "url": "https://ihijri.online/", "logo": "https://ihijri.online/img/favicon.svg"}, {"@type": "WebSite", "@id": "https://ihijri.online/#website", "name": "التقويم الهجري iHijri", "url": "https://ihijri.online/", "inLanguage": "ar", "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "BlogPosting", "headline": "الفرق بين التقويم الهجري والتقويم الميلادي", "description": "ما الفرق بين التقويم الهجري والميلادي؟ مقارنة كاملة في عدد الأيام وطول الأشهر والأساس الفلكي وسبب اختلاف مواعيد رمضان والحج كل عام.", "url": "https://ihijri.online/articles/hijri-vs-gregorian", "datePublished": "2026-08-08", "dateModified": "2026-08-08", "inLanguage": "ar", "image": "https://ihijri.online/img/og-image.png", "author": {"@type": "Organization", "name": "iHijri"}, "publisher": {"@id": "https://ihijri.online/#org"}, "mainEntityOfPage": "https://ihijri.online/articles/hijri-vs-gregorian"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ihijri.online/"}, {"@type": "ListItem", "position": 2, "name": "مقالات", "item": "https://ihijri.online/articles"}, {"@type": "ListItem", "position": 3, "name": "الفرق بين التقويم الهجري والتقويم الميلادي"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "أيهما أطول: السنة الهجرية أم الميلادية؟", "acceptedAnswer": {"@type": "Answer", "text": "السنة الميلادية أطول بنحو 11 يوماً؛ فالهجرية 354 أو 355 يوماً بينما الميلادية 365 أو 366 يوماً."}}, {"@type": "Question", "name": "لماذا يتغير موعد رمضان كل سنة؟", "acceptedAnswer": {"@type": "Answer", "text": "لأن السنة الهجرية أقصر بـ11 يوماً، يتقدم رمضان في التقويم الميلادي هذا المقدار سنوياً، فيدور عبر فصول السنة كاملة خلال نحو 33 عاماً."}}, {"@type": "Question", "name": "هل عمري بالهجري أكبر أم أصغر؟", "acceptedAnswer": {"@type": "Answer", "text": "أكبر. لقصر السنة الهجرية يكون عمرك بها أكبر بنحو سنة كاملة كل 33 عاماً ميلادياً. استخدم <a href=\"/age\">حاسبة العمر</a> لمعرفة الرقم الدقيق."}}, {"@type": "Question", "name": "متى بدأ العمل بالتقويم الهجري؟", "acceptedAnswer": {"@type": "Answer", "text": "بدأ العمل به رسمياً في عهد الخليفة عمر بن الخطاب رضي الله عنه سنة 17هـ تقريباً، وجُعلت بدايته سنة هجرة النبي ﷺ من مكة إلى المدينة الموافقة لعام 622 ميلادية."}}]}]}</script>
 </head>
 <body>
@@ -32,7 +35,7 @@
   <div class="container nav">
     <a href="/" class="logo"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#0b6b4f"/><path d="M31.5 30.2a9.6 9.6 0 1 1-3.1-15.6 11.8 11.8 0 1 0 3.1 15.6z" fill="#e0c07a"/><path d="m33.6 17.4 1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#fff"/></svg><span>التقويم الهجري</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
+    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/countdown">كم باقي</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
   </div>
 </header>
 <div class="article"><nav class="breadcrumbs" aria-label="مسار التنقل"><a href="/">الرئيسية</a> &rsaquo; <a href="/articles">مقالات</a> &rsaquo; الفرق بين التقويم الهجري والتقويم الميلادي</nav><h1>الفرق بين التقويم الهجري والتقويم الميلادي</h1><p class="meta">نُشر في 8 أغسطس 2026 · فريق التقويم الهجري</p>
@@ -63,6 +66,20 @@
 <p><strong>الهجري:</strong> المعاملات الحكومية في السعودية، تواريخ الميلاد في الهوية الوطنية، الإجازات الرسمية، السنة الدراسية، العقود والصكوك، والمناسبات الدينية كلها.</p>
 <p><strong>الميلادي:</strong> التعاملات والسفر الدوليان، التأشيرات، المؤتمرات، الشهادات الأكاديمية الدولية، والتعاملات مع الشركات الأجنبية.</p>
 <p>ولأن الحاجة إلى الاثنين قائمة يومياً، أصبح <a href="/">محول التاريخ الهجري والميلادي</a> أداةً لا غنى عنها للموظف والطالب ورجل الأعمال في المملكة.</p>
+<h2>أثر الفارق على الحسابات المالية والشرعية</h2>
+<p>الفارق بين التقويمين ليس مسألة نظرية، بل له نتائج مالية ملموسة. خذ مثالاً <strong>زكاة المال</strong>: تجب الزكاة بحولان الحول الهجري لا الميلادي. فمن يحسب زكاته على السنة الميلادية يؤخّرها نحو أحد عشر يوماً كل عام، وبعد ثلاثة وثلاثين عاماً يكون قد أسقط سنة زكاة كاملة دون أن ينتبه.</p>
+<p>وللتوفيق بين الأمرين تُستخدم في الفقه المعاصر نسبة تصحيح: من أراد إخراج زكاته على رأس سنة ميلادية أخرج <strong>2.577%</strong> بدلاً من 2.5%، لأن السنة الميلادية أطول من الهجرية بنحو 3%. وهذه النسبة معتمدة لدى عدد من الهيئات الشرعية للمصارف.</p>
+<p>والأمر نفسه ينطبق على <strong>عقود العمل</strong> ومكافأة نهاية الخدمة ومدد الإقامة النظامية في المملكة، إذ تُحسب بالتقويم الهجري. ومن يحسبها بالميلادي يخسر أو يُحمّل الطرف الآخر فارقاً يتراكم مع طول المدة.</p>
+
+<h2>كيف تتعامل مع التقويمين معاً في حياتك اليومية؟</h2>
+<p><strong>احفظ تاريخ ميلادك بالتقويمين:</strong> ستحتاج الهجري في المعاملات الداخلية والميلادي في التأشيرات والجامعات الأجنبية. يمكنك استخراج الاثنين مرة واحدة من <a href="/age">حاسبة العمر</a>.</p>
+<p><strong>ثبّت مرجعاً واحداً للحسابات:</strong> لا تخلط بين تقويمين في المعادلة نفسها. إن كان الالتزام هجرياً فاحسبه هجرياً من بدايته إلى نهايته.</p>
+<p><strong>خطّط للمناسبات مسبقاً:</strong> لأن المناسبات الهجرية تتحرك في التقويم الميلادي، احسب موعدها الميلادي مبكراً قبل حجز السفر أو طلب الإجازة. صفحة <a href="/countdown">كم باقي على رمضان والعيد</a> تعرض ذلك مباشرة.</p>
+<p><strong>انتبه لبداية اليوم:</strong> اليوم الهجري يبدأ من غروب الشمس، والميلادي من منتصف الليل. هذا الفارق البسيط يفسّر معظم حالات اختلاف يوم واحد بين الحسابات والوثائق.</p>
+
+<h2>هل يمكن الاستغناء عن أحد التقويمين؟</h2>
+<p>عملياً لا. فالتقويم الهجري يحمل بعداً تعبدياً لا بديل عنه: الصيام والحج والزكاة والعِدة كلها مرتبطة بالأشهر القمرية بنص القرآن الكريم. وفي المقابل، التقويم الميلادي هو لغة التعامل الدولية في التجارة والطيران والعلوم، والانفصال عنه غير ممكن.</p>
+<p>والحل العملي الذي استقرت عليه المملكة ودول الخليج هو الجمع بينهما: التقويم الهجري مرجعاً رسمياً وشرعياً، والميلادي مرجعاً للتعامل الخارجي، مع أدوات تحويل دقيقة تجسر بينهما. وهذا بالضبط ما يقدّمه هذا الموقع.</p>
 <h2>أسئلة شائعة</h2><details class="faq"><summary>أيهما أطول: السنة الهجرية أم الميلادية؟</summary><div class="a">السنة الميلادية أطول بنحو 11 يوماً؛ فالهجرية 354 أو 355 يوماً بينما الميلادية 365 أو 366 يوماً.</div></details><details class="faq"><summary>لماذا يتغير موعد رمضان كل سنة؟</summary><div class="a">لأن السنة الهجرية أقصر بـ11 يوماً، يتقدم رمضان في التقويم الميلادي هذا المقدار سنوياً، فيدور عبر فصول السنة كاملة خلال نحو 33 عاماً.</div></details><details class="faq"><summary>هل عمري بالهجري أكبر أم أصغر؟</summary><div class="a">أكبر. لقصر السنة الهجرية يكون عمرك بها أكبر بنحو سنة كاملة كل 33 عاماً ميلادياً. استخدم <a href="/age">حاسبة العمر</a> لمعرفة الرقم الدقيق.</div></details><details class="faq"><summary>متى بدأ العمل بالتقويم الهجري؟</summary><div class="a">بدأ العمل به رسمياً في عهد الخليفة عمر بن الخطاب رضي الله عنه سنة 17هـ تقريباً، وجُعلت بدايته سنة هجرة النبي ﷺ من مكة إلى المدينة الموافقة لعام 622 ميلادية.</div></details><div class="cta-box"><h3>جرّب محول التاريخ الهجري المجاني</h3><p>حوّل بين التاريخ الهجري والميلادي فوراً وفق تقويم أم القرى المعتمد في السعودية.</p><a class="btn" href="/">افتح محول التاريخ ←</a></div></div><footer>
   <div class="container">
     <div class="footer-grid">
@@ -78,6 +95,7 @@
           <li><a href="/calendar">التقويم الشهري</a></li>
           <li><a href="/calendar/year">التقويم السنوي</a></li>
           <li><a href="/age">حاسبة العمر</a></li>
+          <li><a href="/countdown">كم باقي على رمضان</a></li>
         </ul>
       </div>
       <div>

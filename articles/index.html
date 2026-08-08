@@ -16,26 +16,37 @@
 <meta property="og:image" content="https://ihijri.online/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="التقويم الهجري ومحول التاريخ الهجري والميلادي">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b6b4f">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="/css/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://ihijri.online/#org", "name": "iHijri - التقويم الهجري", "url": "https://ihijri.online/", "logo": "https://ihijri.online/img/favicon.svg"}, {"@type": "WebSite", "@id": "https://ihijri.online/#website", "name": "التقويم الهجري iHijri", "url": "https://ihijri.online/", "inLanguage": "ar", "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ihijri.online/"}, {"@type": "ListItem", "position": 2, "name": "مقالات"}]}]}</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"></noscript>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://ihijri.online/#org", "name": "iHijri - التقويم الهجري", "url": "https://ihijri.online/", "logo": "https://ihijri.online/img/favicon.svg"}, {"@type": "WebSite", "@id": "https://ihijri.online/#website", "name": "التقويم الهجري iHijri", "url": "https://ihijri.online/", "inLanguage": "ar", "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "Blog", "@id": "https://ihijri.online/articles#blog", "name": "مقالات التقويم الهجري", "url": "https://ihijri.online/articles", "inLanguage": "ar", "description": "مقالات وشروحات عن التقويم الهجري وتقويم أم القرى وتحويل التاريخ والمناسبات الإسلامية.", "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://ihijri.online/articles/hijri-vs-gregorian", "name": "الفرق بين التقويم الهجري والتقويم الميلادي"}, {"@type": "ListItem", "position": 2, "url": "https://ihijri.online/articles/umm-al-qura-calendar", "name": "تقويم أم القرى: التقويم الرسمي في المملكة العربية السعودية"}, {"@type": "ListItem", "position": 3, "url": "https://ihijri.online/articles/convert-hijri-to-gregorian", "name": "كيف تحوّل التاريخ الهجري إلى ميلادي؟ دليل عملي"}, {"@type": "ListItem", "position": 4, "url": "https://ihijri.online/articles/ramadan-eid-dates", "name": "كيف تعرف مواعيد رمضان والأعياد بالتاريخ الميلادي؟"}]}, {"@type": "WebPage", "@id": "https://ihijri.online/articles#page", "name": "مقالات عن التقويم الهجري", "url": "https://ihijri.online/articles", "description": "شروحات ومقالات عن التقويم الهجري وتحويل التاريخ.", "inLanguage": "ar", "datePublished": "2026-08-07", "dateModified": "2026-08-08", "isPartOf": {"@id": "https://ihijri.online/#website"}, "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ihijri.online/"}, {"@type": "ListItem", "position": 2, "name": "مقالات"}]}]}</script>
 </head>
 <body>
 <header>
   <div class="container nav">
     <a href="/" class="logo"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#0b6b4f"/><path d="M31.5 30.2a9.6 9.6 0 1 1-3.1-15.6 11.8 11.8 0 1 0 3.1 15.6z" fill="#e0c07a"/><path d="m33.6 17.4 1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#fff"/></svg><span>التقويم الهجري</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
+    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/countdown">كم باقي</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
   </div>
 </header>
-<div class="container" style="padding-top:20px"><nav class="breadcrumbs" aria-label="مسار التنقل"><a href="/">الرئيسية</a> &rsaquo; مقالات</nav></div><div class="hero" style="padding:32px 0 42px"><div class="container"><h1>مقالات عن التقويم الهجري</h1><p class="sub">شروحات مبسّطة وموثوقة عن التقويم الهجري وتقويم أم القرى وطرق تحويل التاريخ ومواعيد المناسبات الإسلامية.</p></div></div><section><div class="container"><div class="grid g2"><a class="tile" href="/articles/hijri-vs-gregorian"><h3>الفرق بين التقويم الهجري والتقويم الميلادي</h3><p>ما الفرق بين التقويم الهجري والميلادي؟ مقارنة كاملة في عدد الأيام وطول الأشهر والأساس الفلكي وسبب اختلاف مواعيد رمضان والحج كل عام.</p></a><a class="tile" href="/articles/umm-al-qura-calendar"><h3>تقويم أم القرى: التقويم الرسمي في المملكة العربية السعودية</h3><p>ما هو تقويم أم القرى ولماذا اعتمدته السعودية؟ تعرّف على المعايير الفلكية لتحديد بداية الشهر الهجري، وتاريخ التقويم، واستخداماته الرسمية.</p></a><a class="tile" href="/articles/convert-hijri-to-gregorian"><h3>كيف تحوّل التاريخ الهجري إلى ميلادي؟ دليل عملي</h3><p>دليل عملي لتحويل التاريخ الهجري إلى ميلادي والعكس: الطريقة الفورية بالمحول، والمعادلة التقريبية، وجداول أم القرى، مع أمثلة محلولة.</p></a><a class="tile" href="/articles/ramadan-eid-dates"><h3>كيف تعرف مواعيد رمضان والأعياد بالتاريخ الميلادي؟</h3><p>كيف تعرف موعد رمضان وعيد الفطر وعيد الأضحى ويوم عرفة بالتاريخ الميلادي؟ دليل عملي لحساب المناسبات الإسلامية مسبقاً بتقويم أم القرى.</p></a></div></div></section><footer>
+<div class="container" style="padding-top:20px"><nav class="breadcrumbs" aria-label="مسار التنقل"><a href="/">الرئيسية</a> &rsaquo; مقالات</nav></div><div class="hero" style="padding:32px 0 42px"><div class="container"><h1>مقالات عن التقويم الهجري</h1><p class="sub">شروحات مبسّطة وموثوقة عن التقويم الهجري وتقويم أم القرى وطرق تحويل التاريخ ومواعيد المناسبات الإسلامية.</p></div></div><section><div class="container"><div class="grid g2"><a class="tile" href="/articles/hijri-vs-gregorian"><h3>الفرق بين التقويم الهجري والتقويم الميلادي</h3><p>ما الفرق بين التقويم الهجري والميلادي؟ مقارنة كاملة في عدد الأيام وطول الأشهر والأساس الفلكي وسبب اختلاف مواعيد رمضان والحج كل عام.</p></a><a class="tile" href="/articles/umm-al-qura-calendar"><h3>تقويم أم القرى: التقويم الرسمي في المملكة العربية السعودية</h3><p>ما هو تقويم أم القرى ولماذا اعتمدته السعودية؟ تعرّف على المعايير الفلكية لتحديد بداية الشهر الهجري، وتاريخ التقويم، واستخداماته الرسمية.</p></a><a class="tile" href="/articles/convert-hijri-to-gregorian"><h3>كيف تحوّل التاريخ الهجري إلى ميلادي؟ دليل عملي</h3><p>دليل عملي لتحويل التاريخ الهجري إلى ميلادي والعكس: الطريقة الفورية بالمحول، والمعادلة التقريبية، وجداول أم القرى، مع أمثلة محلولة.</p></a><a class="tile" href="/articles/ramadan-eid-dates"><h3>كيف تعرف مواعيد رمضان والأعياد بالتاريخ الميلادي؟</h3><p>كيف تعرف موعد رمضان وعيد الفطر وعيد الأضحى ويوم عرفة بالتاريخ الميلادي؟ دليل عملي لحساب المناسبات الإسلامية مسبقاً بتقويم أم القرى.</p></a></div></div></section><section class="alt"><div class="container" style="max-width:860px">
+        <h2>لماذا هذه المقالات؟</h2>
+        <p>التقويم الهجري بسيط في ظاهره ومعقّد في تفاصيله. فكثير من الأسئلة اليومية — لماذا يتغير موعد رمضان كل عام؟ لماذا عمري بالهجري أكبر؟ كيف أحوّل تاريخ ميلادي بدقة؟ ولماذا يختلف العيد بين الدول؟ — لا تجد لها إجابة واضحة في مكان واحد.</p>
+        <p>لذلك كتبنا هذه المقالات لتشرح ما وراء الأرقام: كيف يعمل التقويم القمري، وما المعايير الفلكية التي يقوم عليها <a href="/articles/umm-al-qura-calendar">تقويم أم القرى</a>، وأين تقع الأخطاء الشائعة عند <a href="/articles/convert-hijri-to-gregorian">تحويل التاريخ</a>، وكيف تخطط مسبقاً <a href="/articles/ramadan-eid-dates">لمواعيد رمضان والأعياد</a>.</p>
+        <h2>من أين تبدأ؟</h2>
+        <p><strong>إن كنت جديداً على الموضوع</strong> فابدأ بمقال <a href="/articles/hijri-vs-gregorian">الفرق بين التقويم الهجري والميلادي</a>، فهو يضع الأساس الذي تُبنى عليه بقية المقالات.</p>
+        <p><strong>إن كنت تبحث عن الدقة الرسمية</strong> — لتوثيق عقد أو معاملة حكومية — فاقرأ <a href="/articles/umm-al-qura-calendar">تقويم أم القرى</a> لتعرف كيف يُحدَّد التاريخ المعتمد في المملكة ومتى تحتاج إلى العودة للجهات الرسمية.</p>
+        <p><strong>إن كنت تريد الحل العملي فوراً</strong> فاستخدم <a href="/">محول التاريخ</a> مباشرة، أو <a href="/age">حاسبة العمر</a> لمعرفة عمرك بالتقويمين، أو <a href="/countdown">عدّاد المناسبات</a> لمعرفة كم باقي على رمضان والعيد.</p>
+        </div></section><footer>
   <div class="container">
     <div class="footer-grid">
       <div>
@@ -50,6 +61,7 @@
           <li><a href="/calendar">التقويم الشهري</a></li>
           <li><a href="/calendar/year">التقويم السنوي</a></li>
           <li><a href="/age">حاسبة العمر</a></li>
+          <li><a href="/countdown">كم باقي على رمضان</a></li>
         </ul>
       </div>
       <div>

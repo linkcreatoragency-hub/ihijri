@@ -16,15 +16,18 @@
 <meta property="og:image" content="https://ihijri.online/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="التقويم الهجري ومحول التاريخ الهجري والميلادي">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b6b4f">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"></noscript>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://ihijri.online/#org", "name": "iHijri - التقويم الهجري", "url": "https://ihijri.online/", "logo": "https://ihijri.online/img/favicon.svg"}, {"@type": "WebSite", "@id": "https://ihijri.online/#website", "name": "التقويم الهجري iHijri", "url": "https://ihijri.online/", "inLanguage": "ar", "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "BlogPosting", "headline": "كيف تعرف مواعيد رمضان والأعياد بالتاريخ الميلادي؟", "description": "كيف تعرف موعد رمضان وعيد الفطر وعيد الأضحى ويوم عرفة بالتاريخ الميلادي؟ دليل عملي لحساب المناسبات الإسلامية مسبقاً بتقويم أم القرى.", "url": "https://ihijri.online/articles/ramadan-eid-dates", "datePublished": "2026-08-08", "dateModified": "2026-08-08", "inLanguage": "ar", "image": "https://ihijri.online/img/og-image.png", "author": {"@type": "Organization", "name": "iHijri"}, "publisher": {"@id": "https://ihijri.online/#org"}, "mainEntityOfPage": "https://ihijri.online/articles/ramadan-eid-dates"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ihijri.online/"}, {"@type": "ListItem", "position": 2, "name": "مقالات", "item": "https://ihijri.online/articles"}, {"@type": "ListItem", "position": 3, "name": "كيف تعرف مواعيد رمضان والأعياد بالتاريخ الميلادي؟"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "متى يبدأ رمضان هذا العام؟", "acceptedAnswer": {"@type": "Answer", "text": "يمكنك معرفة التاريخ المتوقع بدقة عبر <a href=\"/\">محول التاريخ</a>: حوّل 1 رمضان من السنة الهجرية الحالية أو القادمة إلى التاريخ الميلادي. التأكيد النهائي يكون بإعلان الجهات المختصة بعد ترائي الهلال."}}, {"@type": "Question", "name": "هل يمكن معرفة موعد العيد قبل سنوات؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، لأن تقويم أم القرى محسوب فلكياً مسبقاً حتى عام 1600هـ. لكن التاريخ الرسمي النهائي يُعلن قبل المناسبة بعد ثبوت الرؤية."}}, {"@type": "Question", "name": "لماذا يختلف يوم العيد بين الدول؟", "acceptedAnswer": {"@type": "Answer", "text": "لأن بعض الدول تعتمد الرؤية البصرية المحلية وبعضها يعتمد الحساب الفلكي أو يتبع إعلان دولة أخرى، فينتج عن ذلك فارق يوم واحد أحياناً."}}, {"@type": "Question", "name": "كيف أعرف مواعيد الإمساك والإفطار في رمضان؟", "acceptedAnswer": {"@type": "Answer", "text": "استخدم <a href=\"/salah\">مواقيت الصلاة</a> واختر مدينتك؛ وقت الفجر هو وقت الإمساك ووقت المغرب هو وقت الإفطار. ويمكنك عرض الشهر كاملاً من <a href=\"/salah/monthly\">المواقيت الشهرية</a>."}}]}]}</script>
 </head>
 <body>
@@ -32,7 +35,7 @@
   <div class="container nav">
     <a href="/" class="logo"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#0b6b4f"/><path d="M31.5 30.2a9.6 9.6 0 1 1-3.1-15.6 11.8 11.8 0 1 0 3.1 15.6z" fill="#e0c07a"/><path d="m33.6 17.4 1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#fff"/></svg><span>التقويم الهجري</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
+    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/countdown">كم باقي</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
   </div>
 </header>
 <div class="article"><nav class="breadcrumbs" aria-label="مسار التنقل"><a href="/">الرئيسية</a> &rsaquo; <a href="/articles">مقالات</a> &rsaquo; كيف تعرف مواعيد رمضان والأعياد بالتاريخ الميلادي؟</nav><h1>كيف تعرف مواعيد رمضان والأعياد بالتاريخ الميلادي؟</h1><p class="meta">نُشر في 8 أغسطس 2026 · فريق التقويم الهجري</p>
@@ -71,6 +74,27 @@
 <p><strong>طلب الإجازة:</strong> معرفة اليوم الذي يوافقه العيد في الأسبوع تساعدك على تقدير طول الإجازة الفعلية ومتى تقدّم طلبك.</p>
 <p><strong>الاستعداد للصيام:</strong> معرفة موعد رمضان مسبقاً تتيح ترتيب المواعيد الطبية والالتزامات المهمة قبله، وضبط النوم والتغذية استعداداً له.</p>
 <p><strong>مواقيت الإفطار والإمساك:</strong> عند حلول رمضان، استخدم <a href="/salah/monthly">جدول مواقيت الصلاة الشهري</a> لمعرفة أوقات الفجر (الإمساك) والمغرب (الإفطار) لكل يوم في مدينتك.</p>
+
+<h2>كيف تعرف كم باقي على المناسبة بالضبط؟</h2>
+<p>بدل حساب الأيام يدوياً، يعرض <a href="/countdown">عدّاد المناسبات الإسلامية</a> المدة المتبقية على كل مناسبة تلقائياً: رمضان وعيد الفطر ويوم عرفة وعيد الأضحى ورأس السنة الهجرية وعاشوراء. ويُحدَّث العدّاد يومياً بتوقيت المملكة، ويعرض إلى جانب عدد الأيام التاريخ الميلادي المتوقع واسم اليوم في الأسبوع.</p>
+<p>هذه المعلومة الأخيرة — اسم اليوم — أهم مما تبدو: فوقوع العيد يوم الأربعاء مثلاً يعني إمكانية ضمّ الإجازة إلى نهاية الأسبوع والحصول على مدة أطول، بينما وقوعه يوم السبت يقلّص الإجازة الفعلية.</p>
+
+<h2>المناسبات الموسمية وأثرها على الأسعار</h2>
+<p>ترتبط المناسبات الإسلامية بدورة اقتصادية واضحة في المملكة، ومعرفتها مسبقاً توفّر مبالغ حقيقية:</p>
+<ul class="rich">
+  <li><strong>قبل رمضان بشهرين:</strong> ترتفع أسعار تذاكر العمرة تدريجياً، والحجز المبكر في شعبان أو قبله أوفر بكثير.</li>
+  <li><strong>العشر الأواخر من رمضان:</strong> ذروة أسعار الفنادق في مكة والمدينة، وقد تتضاعف عدة مرات.</li>
+  <li><strong>إجازة عيد الفطر:</strong> ذروة السفر الداخلي والخارجي وارتفاع أسعار الطيران.</li>
+  <li><strong>موسم الحج:</strong> قيود وترتيبات خاصة على الحركة إلى مكة، ينبغي معرفتها قبل التخطيط لأي سفر في ذي الحجة.</li>
+</ul>
+<p>ولأن هذه المواعيد تتقدم أحد عشر يوماً كل سنة ميلادية، فإن ما كان مناسباً للحجز العام الماضي قد لا يكون كذلك هذا العام — ولهذا يُنصح بمراجعة <a href="/calendar/year">التقويم الهجري السنوي</a> عند التخطيط.</p>
+
+<h2>أعمال مستحبة يسهل تفويتها</h2>
+<p><strong>صيام تسع ذي الحجة:</strong> العشر الأوائل من ذي الحجة أفضل أيام السنة، ويُستحب صيام التسعة الأولى منها لغير الحاج، ويوم عرفة آكدها.</p>
+<p><strong>صيام يوم عاشوراء وتاسوعاء:</strong> العاشر من محرم ومعه التاسع، ويُكفّر صيام عاشوراء سنةً ماضية.</p>
+<p><strong>ست من شوال:</strong> صيام ستة أيام من شوال بعد رمضان، من صامها مع رمضان كان كصيام الدهر. ولا يُشترط تتابعها.</p>
+<p><strong>الأيام البيض:</strong> الثالث عشر والرابع عشر والخامس عشر من كل شهر هجري، ويمكن معرفة مواعيدها من <a href="/calendar">التقويم الهجري الشهري</a>.</p>
+<p>الجامع بين هذه الأعمال أنها مرتبطة بتواريخ هجرية محددة يسهل تفويتها إن لم تتابع التقويم — ولهذا فإن متابعة <a href="/date">التاريخ الهجري اليوم</a> عادة نافعة.</p>
 <h2>أسئلة شائعة</h2><details class="faq"><summary>متى يبدأ رمضان هذا العام؟</summary><div class="a">يمكنك معرفة التاريخ المتوقع بدقة عبر <a href="/">محول التاريخ</a>: حوّل 1 رمضان من السنة الهجرية الحالية أو القادمة إلى التاريخ الميلادي. التأكيد النهائي يكون بإعلان الجهات المختصة بعد ترائي الهلال.</div></details><details class="faq"><summary>هل يمكن معرفة موعد العيد قبل سنوات؟</summary><div class="a">نعم، لأن تقويم أم القرى محسوب فلكياً مسبقاً حتى عام 1600هـ. لكن التاريخ الرسمي النهائي يُعلن قبل المناسبة بعد ثبوت الرؤية.</div></details><details class="faq"><summary>لماذا يختلف يوم العيد بين الدول؟</summary><div class="a">لأن بعض الدول تعتمد الرؤية البصرية المحلية وبعضها يعتمد الحساب الفلكي أو يتبع إعلان دولة أخرى، فينتج عن ذلك فارق يوم واحد أحياناً.</div></details><details class="faq"><summary>كيف أعرف مواعيد الإمساك والإفطار في رمضان؟</summary><div class="a">استخدم <a href="/salah">مواقيت الصلاة</a> واختر مدينتك؛ وقت الفجر هو وقت الإمساك ووقت المغرب هو وقت الإفطار. ويمكنك عرض الشهر كاملاً من <a href="/salah/monthly">المواقيت الشهرية</a>.</div></details><div class="cta-box"><h3>جرّب محول التاريخ الهجري المجاني</h3><p>حوّل بين التاريخ الهجري والميلادي فوراً وفق تقويم أم القرى المعتمد في السعودية.</p><a class="btn" href="/">افتح محول التاريخ ←</a></div></div><footer>
   <div class="container">
     <div class="footer-grid">
@@ -86,6 +110,7 @@
           <li><a href="/calendar">التقويم الشهري</a></li>
           <li><a href="/calendar/year">التقويم السنوي</a></li>
           <li><a href="/age">حاسبة العمر</a></li>
+          <li><a href="/countdown">كم باقي على رمضان</a></li>
         </ul>
       </div>
       <div>

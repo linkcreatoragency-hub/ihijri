@@ -16,15 +16,18 @@
 <meta property="og:image" content="https://ihijri.online/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="التقويم الهجري ومحول التاريخ الهجري والميلادي">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0b6b4f">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"></noscript>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://ihijri.online/#org", "name": "iHijri - التقويم الهجري", "url": "https://ihijri.online/", "logo": "https://ihijri.online/img/favicon.svg"}, {"@type": "WebSite", "@id": "https://ihijri.online/#website", "name": "التقويم الهجري iHijri", "url": "https://ihijri.online/", "inLanguage": "ar", "publisher": {"@id": "https://ihijri.online/#org"}}, {"@type": "BlogPosting", "headline": "تقويم أم القرى: التقويم الرسمي في المملكة العربية السعودية", "description": "ما هو تقويم أم القرى ولماذا اعتمدته السعودية؟ تعرّف على المعايير الفلكية لتحديد بداية الشهر الهجري، وتاريخ التقويم، واستخداماته الرسمية.", "url": "https://ihijri.online/articles/umm-al-qura-calendar", "datePublished": "2026-08-08", "dateModified": "2026-08-08", "inLanguage": "ar", "image": "https://ihijri.online/img/og-image.png", "author": {"@type": "Organization", "name": "iHijri"}, "publisher": {"@id": "https://ihijri.online/#org"}, "mainEntityOfPage": "https://ihijri.online/articles/umm-al-qura-calendar"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://ihijri.online/"}, {"@type": "ListItem", "position": 2, "name": "مقالات", "item": "https://ihijri.online/articles"}, {"@type": "ListItem", "position": 3, "name": "تقويم أم القرى: التقويم الرسمي في المملكة العربية السعودية"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ما معنى «أم القرى»؟", "acceptedAnswer": {"@type": "Answer", "text": "«أم القرى» اسم لمكة المكرمة ورد في القرآن الكريم، وسُمّي التقويم بها لأن حساباته الفلكية مبنية على إحداثيات مكة المكرمة تحديداً."}}, {"@type": "Question", "name": "هل تقويم أم القرى معتمد خارج السعودية؟", "acceptedAnswer": {"@type": "Answer", "text": "هو التقويم الرسمي للمملكة العربية السعودية، لكنه يُستخدم على نطاق واسع كمرجع في دول الخليج وفي التطبيقات والأنظمة العالمية التي تدعم التقويم الهجري."}}, {"@type": "Question", "name": "متى بدأ العمل بتقويم أم القرى؟", "acceptedAnswer": {"@type": "Answer", "text": "بدأ العمل به رسمياً في عام 1346هـ، وتطوّرت معاييره الفلكية عبر العقود حتى استقرت على المعيار المعتمد حالياً."}}, {"@type": "Question", "name": "هل يمكن معرفة تاريخ رمضان القادم من تقويم أم القرى؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم، ولأن التقويم محسوب فلكياً مسبقاً يمكن معرفة التاريخ المتوقع لبداية رمضان لسنوات قادمة. استخدم <a href=\"/\">محول التاريخ</a> وحوّل 1 رمضان من السنة المطلوبة إلى الميلادي."}}]}]}</script>
 </head>
 <body>
@@ -32,7 +35,7 @@
   <div class="container nav">
     <a href="/" class="logo"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#0b6b4f"/><path d="M31.5 30.2a9.6 9.6 0 1 1-3.1-15.6 11.8 11.8 0 1 0 3.1 15.6z" fill="#e0c07a"/><path d="m33.6 17.4 1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2z" fill="#fff"/></svg><span>التقويم الهجري</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="القائمة" aria-expanded="false">&#9776;</button>
-    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
+    <ul class="nav-links" id="navLinks"><li><a href="/">الرئيسية</a></li><li><a href="/date">تاريخ اليوم</a></li><li><a href="/calendar">التقويم الشهري</a></li><li><a href="/calendar/year">التقويم السنوي</a></li><li><a href="/months">الأشهر الهجرية</a></li><li><a href="/age">حاسبة العمر</a></li><li><a href="/countdown">كم باقي</a></li><li><a href="/salah">مواقيت الصلاة</a></li><li><a href="/quran">القرآن الكريم</a></li><li><a href="/zodiac">الأبراج</a></li></ul>
   </div>
 </header>
 <div class="article"><nav class="breadcrumbs" aria-label="مسار التنقل"><a href="/">الرئيسية</a> &rsaquo; <a href="/articles">مقالات</a> &rsaquo; تقويم أم القرى: التقويم الرسمي في المملكة العربية السعودية</nav><h1>تقويم أم القرى: التقويم الرسمي في المملكة العربية السعودية</h1><p class="meta">نُشر في 8 أغسطس 2026 · فريق التقويم الهجري</p>
@@ -60,6 +63,24 @@
 <h2>هل يختلف تقويم أم القرى عن تقويمات الدول الأخرى؟</h2>
 <p>نعم، قد يحدث فارق يوم واحد بين تقويم أم القرى وتقويمات دول أخرى، لأن بعض الدول تعتمد الرؤية البصرية المحلية، وبعضها يعتمد معايير فلكية مختلفة (كاشتراط عمر معيّن للهلال أو زاوية استطالة محددة). ولهذا قد تجد أن عيد الفطر يُحتفل به في يوم مختلف بين دولة وأخرى.</p>
 <p>وإذا كنت في المملكة أو تتعامل مع جهات سعودية، فتقويم أم القرى هو المرجع الذي ينبغي الاعتماد عليه — وهو ما يعتمده هذا الموقع في جميع صفحاته، بما فيها <a href="/calendar">التقويم الشهري</a> و<a href="/calendar/year">التقويم السنوي</a> و<a href="/date">تاريخ اليوم</a>.</p>
+
+<h2>تطور معايير التقويم عبر العقود</h2>
+<p>لم يستقر تقويم أم القرى على معياره الحالي دفعةً واحدة، بل مرّ بمراحل تطوير استجابةً لتقدّم الحسابات الفلكية:</p>
+<ul class="rich">
+  <li><strong>المرحلة الأولى:</strong> اعتمد المعيار على إمكان رؤية الهلال نظرياً، وهو معيار أنتج أحياناً فروقاً عن الرؤية الفعلية.</li>
+  <li><strong>مرحلة معيار الاقتران:</strong> اشتُرط حدوث اقتران القمر قبل الغروب، وهو تحسّن مهم لكنه لم يكن كافياً وحده.</li>
+  <li><strong>المعيار الحالي:</strong> يجمع شرطين معاً — الاقتران قبل غروب الشمس، وغروب القمر بعد غروب الشمس بالنسبة لإحداثيات مكة المكرمة. وهذا المعيار المزدوج جعل التقويم أقرب ما يكون إلى الرؤية الفعلية.</li>
+</ul>
+<p>وهذا التطور يعكس فلسفة واضحة: البقاء وفياً لأصل التقويم القمري المرتبط بالهلال، مع الاستفادة من دقة الحساب الفلكي التي تتيح المعرفة المسبقة.</p>
+
+<h2>لماذا مكة المكرمة تحديداً كمرجع؟</h2>
+<p>اختيار إحداثيات مكة المكرمة أساساً للحساب ليس اعتباطاً. فمكة هي قبلة المسلمين ومحور شعائرهم، ووحدة المرجع تمنع تفتّت التقويم داخل المملكة الواسعة. فلو حُسب التقويم لكل مدينة على حدة لأمكن أن يبدأ الشهر في <strong>جازان</strong> جنوباً قبل <strong>تبوك</strong> شمالاً، وهو ما يخلق فوضى في المعاملات والإجازات والمناسبات.</p>
+<p>ويلاحظ هنا فرق مهم عن <a href="/salah">مواقيت الصلاة</a>: المواقيت تُحسب لكل مدينة على حدة لأنها مرتبطة بموقع الشمس بالنسبة لأفق المكان نفسه، بينما التقويم يُوحَّد على مرجع واحد لأن المطلوب هو تحديد اليوم لا اللحظة.</p>
+
+<h2>هل يمكنني الاعتماد على تقويم أم القرى في المسائل الشرعية؟</h2>
+<p>للتقويم استخدامان ينبغي التفريق بينهما. في <strong>التخطيط والتنظيم</strong> — معرفة موعد رمضان المتوقع، حجز رحلة عمرة، تقدير موعد إجازة العيد، حساب حولان الحول للزكاة — فتقويم أم القرى مرجع ممتاز ودقيق ويمكن الاعتماد عليه بثقة.</p>
+<p>أما في <strong>إثبات دخول الشهر شرعاً</strong> لصيام رمضان أو الفطر أو الوقوف بعرفة، فالمعتمد رسمياً في المملكة هو ثبوت الرؤية وإعلان الجهة المختصة. والفارق بين الحساب والإعلان — إن وقع — لا يتجاوز يوماً واحداً عادة، لكنه فارق مؤثر في هذه المواضع بالذات.</p>
+<p>وهذا هو السبب في أننا ننبّه في صفحات الموقع إلى هذه التفرقة بدل تقديم التاريخ المحسوب على أنه إعلان رسمي.</p>
 <h2>أسئلة شائعة</h2><details class="faq"><summary>ما معنى «أم القرى»؟</summary><div class="a">«أم القرى» اسم لمكة المكرمة ورد في القرآن الكريم، وسُمّي التقويم بها لأن حساباته الفلكية مبنية على إحداثيات مكة المكرمة تحديداً.</div></details><details class="faq"><summary>هل تقويم أم القرى معتمد خارج السعودية؟</summary><div class="a">هو التقويم الرسمي للمملكة العربية السعودية، لكنه يُستخدم على نطاق واسع كمرجع في دول الخليج وفي التطبيقات والأنظمة العالمية التي تدعم التقويم الهجري.</div></details><details class="faq"><summary>متى بدأ العمل بتقويم أم القرى؟</summary><div class="a">بدأ العمل به رسمياً في عام 1346هـ، وتطوّرت معاييره الفلكية عبر العقود حتى استقرت على المعيار المعتمد حالياً.</div></details><details class="faq"><summary>هل يمكن معرفة تاريخ رمضان القادم من تقويم أم القرى؟</summary><div class="a">نعم، ولأن التقويم محسوب فلكياً مسبقاً يمكن معرفة التاريخ المتوقع لبداية رمضان لسنوات قادمة. استخدم <a href="/">محول التاريخ</a> وحوّل 1 رمضان من السنة المطلوبة إلى الميلادي.</div></details><div class="cta-box"><h3>جرّب محول التاريخ الهجري المجاني</h3><p>حوّل بين التاريخ الهجري والميلادي فوراً وفق تقويم أم القرى المعتمد في السعودية.</p><a class="btn" href="/">افتح محول التاريخ ←</a></div></div><footer>
   <div class="container">
     <div class="footer-grid">
@@ -75,6 +96,7 @@
           <li><a href="/calendar">التقويم الشهري</a></li>
           <li><a href="/calendar/year">التقويم السنوي</a></li>
           <li><a href="/age">حاسبة العمر</a></li>
+          <li><a href="/countdown">كم باقي على رمضان</a></li>
         </ul>
       </div>
       <div>
