@@ -1,6 +1,25 @@
 /* ihijri.online — shared UI logic */
 (function () {
   "use strict";
+  // Arabic counted-noun agreement: [singular, dual, plural(3-10), accusative(11+/0)]
+  var AR_DAY = ["يوم واحد", "يومان", "أيام", "يومًا"];
+  var AR_MONTH = ["شهر واحد", "شهران", "أشهر", "شهرًا"];
+  var AR_YEAR = ["سنة واحدة", "سنتان", "سنوات", "سنة"];
+  function arCount(n, f) {
+    if (n === 1) return f[0];
+    if (n === 2) return f[1];
+    if (n >= 3 && n <= 10) return n + " " + f[2];
+    return n + " " + f[3];
+  }
+  function arAge(a) {
+    var parts = [];
+    if (a.y) parts.push(arCount(a.y, AR_YEAR));
+    if (a.m) parts.push(arCount(a.m, AR_MONTH));
+    if (a.d || !parts.length) parts.push(arCount(a.d, AR_DAY));
+    return parts.join(" و");
+  }
+  window.arCount = arCount; window.AR_DAY = AR_DAY;
+
   var H = window.Hijri;
   var AR = { d: function (n) { return String(n); } };
 
@@ -251,8 +270,8 @@
       var ah = diff(hb.year, hb.month, hb.day, nh.year, nh.month, nh.day, H.monthLength);
       var days = njdn - bjdn;
 
-      $("ageBig").textContent = ag.y + " سنة و " + ag.m + " شهرًا و " + ag.d + " يومًا";
-      $("ageSub").textContent = "عمرك بالتقويم الهجري: " + ah.y + " سنة و " + ah.m + " شهرًا و " + ah.d + " يومًا";
+      $("ageBig").textContent = arAge(ag);
+      $("ageSub").textContent = "عمرك بالتقويم الهجري: " + arAge(ah);
       var wd = H.WEEKDAYS[H.weekdayOfJdn(bjdn)];
       // next birthday (gregorian)
       var nby = now.year, nbj = H.gregToJdn(nby, gb.month, Math.min(gb.day, gLen(nby, gb.month)));
@@ -262,10 +281,10 @@
         "يوم ميلادك: " + wd,
         "ميلادك بالهجري: " + formatHijri(hb),
         "ميلادك بالميلادي: " + formatGreg(gb),
-        "عدد الأيام التي عشتها: " + days.toLocaleString("ar-EG") + " يومًا",
-        "عدد الأسابيع: " + Math.floor(days / 7).toLocaleString("ar-EG"),
-        "عدد الساعات: " + (days * 24).toLocaleString("ar-EG"),
-        toBday === 0 ? "🎉 عيد ميلادك اليوم!" : "يتبقى على عيد ميلادك: " + toBday + " يومًا"
+        "عدد الأيام التي عشتها: " + days.toLocaleString("en-US") + " " + AR_DAY[3],
+        "عدد الأسابيع: " + Math.floor(days / 7).toLocaleString("en-US") + " أسبوعًا",
+        "عدد الساعات: " + (days * 24).toLocaleString("en-US") + " ساعة",
+        toBday === 0 ? "🎉 عيد ميلادك اليوم!" : "يتبقى على عيد ميلادك: " + arCount(toBday, AR_DAY)
       ];
       $("ageMeta").innerHTML = chips.map(function (c) { return '<span class="chip">' + c + "</span>"; }).join("");
       $("ageResult").classList.add("show");

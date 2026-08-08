@@ -1,5 +1,7 @@
 /* ihijri.online — كم باقي على المناسبات الإسلامية */
 (function () {
+  function arDays(n){ if(n===1) return "يوم واحد"; if(n===2) return "يومان"; if(n>=3&&n<=10) return n+" أيام"; return n+" يومًا"; }
+
   "use strict";
   var H = window.Hijri;
   // [key, arabic name, hijri month, hijri day, note]
@@ -43,7 +45,7 @@
 
     for (var k = 0; k < rows.length; k++) {
       var r = rows[k];
-      var label = r.days === 0 ? "اليوم!" : r.days === 1 ? "غداً" : "باقي " + r.days + " يوماً";
+      var label = r.days === 0 ? "اليوم!" : r.days === 1 ? "غداً" : "باقي " + arDays(r.days);
       cards += '<div class="cd-card' + (k === 0 ? " cd-next" : "") + '">' +
         '<div class="cd-ic">' + r.icon + "</div>" +
         '<div class="cd-name">' + r.name + "</div>" +
@@ -62,13 +64,13 @@
         '<td class="num">' + x.hd + " " + H.HIJRI_MONTHS[x.hm - 1] + " " + x.hy + " هـ</td>" +
         "<td>" + x.wd + "</td>" +
         '<td class="num">' + window.formatGreg(x.g) + "</td>" +
-        '<td class="num">' + (x.days === 0 ? "اليوم" : x.days + " يوماً") + "</td></tr>";
+        '<td class="num">' + (x.days === 0 ? "اليوم" : arDays(x.days)) + "</td></tr>";
     }
     window.$i("cdBody").innerHTML = tb;
 
     var first = rows[0];
     window.$i("cdLead").innerHTML = "أقرب مناسبة قادمة هي <strong>" + first.name + "</strong> — " +
-      (first.days === 0 ? "وهي اليوم!" : "يتبقى عليها <strong>" + first.days + " يوماً</strong>، وتوافق " +
+      (first.days === 0 ? "وهي اليوم!" : "يتبقى عليها <strong>" + arDays(first.days) + "</strong>، وتوافق " +
         first.wd + " " + window.formatGreg(first.g) + ".");
   };
 })();
