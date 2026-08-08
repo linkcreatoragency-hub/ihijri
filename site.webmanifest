@@ -1,0 +1,17 @@
+{
+  "name": "التقويم الهجري - محول التاريخ الهجري والميلادي",
+  "short_name": "التقويم الهجري",
+  "description": "محول التاريخ الهجري والميلادي وفق تقويم أم القرى، مع التقويم الشهري والسنوي وحاسبة العمر ومواقيت الصلاة.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6faf8",
+  "theme_color": "#0b6b4f",
+  "icons": [
+    { "src": "/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/img/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
