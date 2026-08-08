@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ihijri.online/sitemap.xml
+
+# ihijri.online - Umm al-Qura Hijri calendar tools
